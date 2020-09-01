@@ -9,7 +9,7 @@ function update {
 
 # cek versi
 git config --global credential.helper store
-git fetch origin master
+git fetch
 UPSTREAM=${1:-'@{u}'}
 LOCAL=$(git rev-parse @)
 REMOTE=$(git rev-parse "$UPSTREAM")
